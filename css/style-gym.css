@@ -1,0 +1,634 @@
+
+html {
+    overflow: hidden;
+}
+
+
+body {
+    background-color: #1f1f21;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 120%;
+    height: 200px;
+    background-color: #00aaf7;
+    transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -webkit-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -moz-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -ms-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -o-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+}
+
+.parent {
+    background-color: red;
+    width: 90%;
+    min-height: 90vh;
+    background-image: url(/Images/1.jpg);
+    background-size: cover;
+    background-position: 0px -100px;
+    margin: 10px auto;
+    position: relative;
+    top: 25px;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* .parent .img-one {
+    width: 100%;
+    position: absolute;
+    top: -50px;
+    z-index: -1;
+}
+ */
+
+
+/* .parent .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: red;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+} */
+
+
+.parent .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* background-color: red; */
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.parent .container .head {
+    color: white;
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.parent .container .head h1 {
+    cursor: pointer;
+    margin: 16px 0px;
+    font-size: 40px;
+}
+
+.parent .container .head ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.parent .container .head ul li {
+    list-style: none;
+    margin-left: 35px;
+    font-size: 19px;
+}
+
+.parent .container .head ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.parent .container .landing {
+    color: white;
+    align-self: center;
+    width: 100%;
+}
+
+.parent .container .landing h1 {
+    width: 400px;
+    max-width: 100%;
+    font-size: 40px;
+    margin: 0;
+}
+
+.parent .container .landing h1 .body,
+.parent .container .landing h1 .home {
+    color: #00aaf7;
+}
+
+.parent .container .landing p {
+    width: 300px;
+}
+
+
+.parent .container .landing button {
+    cursor: pointer;
+    background-color: #00aaf7;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.parent .container .icons {
+    align-self: flex-end;
+}
+
+.parent .container .icons img {
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start One */
+
+
+/* html {
+    overflow: hidden;
+}
+
+
+body {
+    background-color: #1f1f21;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 120%;
+    height: 200px;
+    background-color: #00aaf7;
+    transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -webkit-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -moz-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -ms-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -o-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+}
+
+.parent {
+    width: 90%;
+    height: 90vh;
+    margin: 10px auto;
+    position: relative;
+    top: 25px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.parent .img-one {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.parent .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.parent .container .head {
+    color: white;
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.parent .container .head h1 {
+    cursor: pointer;
+    margin: 16px 0px;
+    font-size: 40px;
+}
+
+.parent .container .head ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.parent .container .head ul li {
+    list-style: none;
+    margin-left: 35px;
+    font-size: 19px;
+}
+
+.parent .container .head ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.parent .container .landing {
+    color: white;
+    align-self: center;
+    width: 100%;
+}
+
+.parent .container .landing h1 {
+    width: 800px;
+    font-size: 50px;
+    margin: 0;
+}
+
+.parent .container .landing h1 .body,
+.parent .container .landing h1 .home {
+    color: #00aaf7;
+}
+
+.parent .container .landing p {
+    width: 800px;
+}
+
+
+.parent .container .landing button {
+    cursor: pointer;
+    background-color: #00aaf7;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.parent .container .icons {
+    align-self: flex-end;
+}
+
+.parent .container .icons img {
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+} */
+
+/* End One */
+
+
+
+
+
+
+
+
+/* Start Two */
+
+/* 
+html {
+    overflow: hidden;
+}
+
+
+body {
+    background-color: #1f1f21;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 120%;
+    height: 200px;
+    background-color: #00aaf7;
+    transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -webkit-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -moz-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -ms-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -o-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+}
+
+.parent {
+    width: 90%;
+    height: 90vh;
+    margin: 10px auto;
+    position: relative;
+    top: 25px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.parent .img-one {
+    width: 100%;
+    position: absolute;
+    top: -70px;
+    z-index: -1;
+}
+
+.parent .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.parent .container .head {
+    color: white;
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.parent .container .head h1 {
+    cursor: pointer;
+    margin: 16px 0px;
+    font-size: 40px;
+}
+
+.parent .container .head ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.parent .container .head ul li {
+    list-style: none;
+    margin-left: 35px;
+    font-size: 19px;
+}
+
+.parent .container .head ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.parent .container .landing {
+    color: white;
+    align-self: center;
+    width: 100%;
+}
+
+.parent .container .landing h1 {
+    width: 500px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.parent .container .landing h1 .body,
+.parent .container .landing h1 .home {
+    color: #00aaf7;
+}
+
+.parent .container .landing p {
+    width: 500px;
+}
+
+
+.parent .container .landing button {
+    cursor: pointer;
+    background-color: #00aaf7;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.parent .container .icons {
+    align-self: flex-end;
+}
+
+.parent .container .icons img {
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+ */
+
+
+
+
+
+
+/* End Two */
+
+
+
+/* Start Three */
+
+
+
+
+
+/* 
+html {
+    overflow: hidden;
+}
+
+
+body {
+    background-color: #1f1f21;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 120%;
+    height: 200px;
+    background-color: #00aaf7;
+    transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -webkit-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -moz-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -ms-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+    -o-transform: rotate(-10deg) translateY(200px) translateX(-100px);
+}
+
+.parent {
+    width: 90%;
+    height: 90vh;
+    margin: 10px auto;
+    position: relative;
+    top: 25px;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.parent .img-one {
+    width: 100%;
+    position: absolute;
+    top: -70px;
+    z-index: -1;
+}
+
+.parent .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.parent .container .head {
+    color: white;
+    margin: 15px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.parent .container .head h1 {
+    cursor: pointer;
+    margin: 16px 0px;
+    font-size: 40px;
+}
+
+.parent .container .head ul {
+    display: flex;
+    margin-right: 20px;
+}
+
+.parent .container .head ul li {
+    list-style: none;
+    margin-left: 35px;
+    font-size: 19px;
+}
+
+.parent .container .head ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.parent .container .landing {
+    color: white;
+    align-self: center;
+    width: 100%;
+}
+
+.parent .container .landing h1 {
+    width: 400px;
+    font-size: 40px;
+    margin: 0;
+}
+
+.parent .container .landing h1 .body,
+.parent .container .landing h1 .home {
+    color: #00aaf7;
+}
+
+.parent .container .landing p {
+    width: 300px;
+}
+
+
+.parent .container .landing button {
+    cursor: pointer;
+    background-color: #00aaf7;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
+.parent .container .icons {
+    align-self: flex-end;
+}
+
+.parent .container .icons img {
+    cursor: pointer;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+ */
+
+
+
+/* End Three */
